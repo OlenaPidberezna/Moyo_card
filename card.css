@@ -1,0 +1,241 @@
+
+body{
+    background: grey;
+}
+.card{
+    position: relative; 
+
+    width: 200px;
+    height: 400px;
+       
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+}
+
+.card__image{
+    position: absolute;
+
+    left: 10%;    
+    top: 7.4%;    
+    right: 85%;
+
+    width:160px;
+    height:134px; 
+
+}
+.card__item-name{
+
+    position: absolute;
+    left: 7.5%;
+    right: 7.5%;
+    top: 50%;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: bold;
+    
+    color: #000000;
+}
+
+.card__item-code{
+    position: absolute;
+
+left: 7.5%;
+top: 61.04%;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 13px;
+
+color: #000000;
+}
+
+
+.card__comment{
+    position: absolute;
+left: 63.5%;
+right: 7.5%;
+top: 68.7%;
+bottom: 28.54%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 13px;
+text-align: right;
+
+color: #000000;
+}
+
+.card__price-caption{
+    
+position: absolute;
+left: 7.5%;
+right: 78%;
+top: 77.92%;
+bottom: 18.86%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 13px;
+
+/* identical to box height */
+text-align: left;
+
+color: #000000;
+}
+
+.card__price-number{
+    position: absolute;
+
+right: 7.5%;
+top: 76.67%;
+bottom: 18.61%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 23px;
+
+/* identical to box height */
+text-align: right;
+
+color: #000000;
+
+}
+.card__button{
+    position: absolute;
+   
+    left: 7.5%;
+right: 7.5%;
+top: 86.35%;
+bottom: 3.72%;
+
+width: 170px;
+height: 40px;
+
+border: 0;
+padding: 0;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+background: #00ACDC;
+border-radius: 5px;
+ 
+}
+
+.card__button--hovered:hover{
+    color: #00ACDC;
+background:   #FFFFFF;
+border: #00ACDC;
+border-style: solid;
+border-width: 1px;
+}
+
+.card__rating{
+    position: absolute;
+    top: 67.99%;
+    left: 7.5%;
+}
+
+.rating {
+    margin: 0 0 1em 0;
+    padding: 0;
+    border: none;
+}
+
+
+/* Group */
+
+.rating__group {
+    position: relative;
+    width: 5em;
+    height: 2em;
+    background-image: url(https://cdn.glitch.com/be154eac-f8a7-4b55-9350-27cb2d6ff6c0%2Foff.svg);
+    background-size: 1em auto;
+    background-repeat: repeat-x;
+}
+
+.rating__group:focus-within {
+    outline: 0.2em solid #4a90e2;
+    outline-offset: 0.2em;
+}
+
+/* Star */
+
+.rating__star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 2em;
+    font-size: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-size: 1em auto;
+    background-repeat: repeat-x;
+}
+
+.rating__star:focus {
+    outline: none;
+}
+
+.rating__star:hover,
+.rating__star:checked {
+    background-image: url(https://cdn.glitch.com/be154eac-f8a7-4b55-9350-27cb2d6ff6c0%2Fon.svg);
+}
+
+.rating__star:hover ~ .rating__star {
+    background-image: url(https://cdn.glitch.com/be154eac-f8a7-4b55-9350-27cb2d6ff6c0%2Foff.svg);
+}
+
+/* Options */
+
+.rating__star:nth-of-type(1) {
+    z-index: 5;
+    width: 1em;
+   
+}
+
+.rating__star:nth-of-type(2) {
+    z-index: 4;
+    width: 2em;
+}
+
+.rating__star:nth-of-type(3) {
+    z-index: 3;
+    width: 3em;
+}
+
+.rating__star:nth-of-type(4) {
+    z-index: 2;
+    width: 4em;
+}
+
+.rating__star:nth-of-type(5) {
+    z-index: 1;
+    width: 5em;
+}
